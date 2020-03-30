@@ -9,6 +9,10 @@ async function run() {
     // Get owner and repo from context of payload that triggered the action
     const owner = core.getInput('owner', {required: true})
     const repo = core.getInput('repo', {required: true})
+    console.log(owner)
+    console.log(repo)
+    console.log(context.repo)
+    console.log("xxxxx=====================")
     // const { owner, repo } = context.repo;
     // core.setOutput('repo_info', repo);
     // core.setOutput('repo_owner', owner);
